@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
+    <title>Controle Financeiro</title>
+</head>
+<body>
+    <h2>Controle de Despesas</h2>
+
+    <div class="container">
+        <h4>SALDO ATUAL</h4>
+        <p id="v-atual" class="v-atual">R$ 0.00</p>
+
+    <div class="valores-container">
+      <div>
+        <h4>RECEITAS</h4>
+        <P id="v-adicionado" class="v-adicionado"> + R$ 0.00</P>
+      </div>
+
+      <div>
+        <h4>DESPESAS</h4>
+        <p id="v-retirado" class="v-retidado"> - R$ 0.00</p>
+      </div>
+    </div>  
+
+        <h3>Transações</h3>
+
+        <ul id="transacao" class="transacao"></ul>
+
+        <h3>Adicionar Transação</h3>
+
+    <form id="form">
+        <div class="form-control">
+        <label for="text">Nome</label>
+            <input autofocus type="text" id="text" placeholder="Nome da transação">
+        </div>
+
+        <div class="form-control">
+            <label for="text">Valor</label>
+            <br>
+            <small>(negativo - despesas, positivo - receitas)</small>
+            <br>
+            <input type="number" id="valor" placeholder="Valor da transação">
+        </div>
+        <button class="botao">Adicionar</button>
+    </form>
+   </div>
+   <a href="login/login.html">Sair</a>
+
+<script  src = "script.js" > </script>
+</body>
+</html>
